@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: issp-gateway
+server:
+  port: 9710
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9701/eureka/
+management:
+  security:
+    enabled: false
+zuul:
+  sensitive-headers:
